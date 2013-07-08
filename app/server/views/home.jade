@@ -1,0 +1,32 @@
+
+extends layout
+
+block content
+  .navbar.navbar-inverse.navbar-fixed-top
+        .navbar-inner
+          .container
+            button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.brand(href='#') Home
+            .nav-collapse.collapse
+              ul.nav                
+                li
+                  a(href='/editprofile') Edit Profile                
+          button#btn-logout.btn.btn-primary
+            i.icon-lock.icon-white
+            | Sign Out
+  
+  include account
+  include modals/alert
+  include modals/confirm
+
+block scripts
+  script(src='/vendor/jquery.min.js')
+  script(src='/vendor/jquery.form.js')
+  script(src='/vendor/bootstrap-modal.js')
+  script(src='/vendor/bootstrap-transition.js')
+  script(src='/js/views/home.js')
+  script(src='/js/controllers/homeController.js')
+  script(src='/js/form-validators/accountValidator.js')

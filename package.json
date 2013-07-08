@@ -1,0 +1,13 @@
+{
+	"name": "POC",
+	"version": "1.0.0",
+	"description": "Search Prototype",
+	"private": true,
+	"dependencies": {
+		"express": "latest",		
+		"jade": "latest",
+		"mongodb": "latest",
+		"moment" : "latest",
+		"emailjs": "latest"
+	}
+}
